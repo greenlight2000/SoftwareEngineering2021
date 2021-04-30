@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="view" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group56.view.user_info_module.UserModuleFrameWork">
+   <children>
+      <HBox prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="navigationPane" prefHeight="600.0" prefWidth="80.0" />
+            <Pane prefHeight="600.0" prefWidth="500.0">
+               <children>
+                  <VBox prefHeight="600.0" prefWidth="480.0">
+                     <children>
+                        <Pane fx:id="contentPane" prefHeight="500.0" prefWidth="480.0" />
+                        <Pane fx:id="footerPane" prefHeight="100.0" prefWidth="480.0" />
+                     </children>
+                  </VBox>
+               </children></Pane>
+            <Pane fx:id="advertisementPane" prefHeight="600.0" prefWidth="220.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

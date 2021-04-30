@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="view" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group56.view.user_info_module.UserInfoModifyViewController">
+   <children>
+      <TextField fx:id="nameText" layoutX="16.0" layoutY="100.0" prefHeight="35.0" prefWidth="273.0" AnchorPane.leftAnchor="16.0" />
+      <TextField fx:id="ageText" layoutX="246.0" layoutY="100.0" prefHeight="35.0" prefWidth="184.0" AnchorPane.rightAnchor="14.0" />
+      <TextField fx:id="genderText" layoutX="15.0" layoutY="168.0" prefHeight="35.0" prefWidth="233.0" AnchorPane.leftAnchor="15.0" />
+      <TextField fx:id="sexText" layoutX="245.0" layoutY="168.0" prefHeight="35.0" prefWidth="222.0" AnchorPane.rightAnchor="15.0" />
+      <TextField fx:id="goalText" layoutX="15.0" layoutY="238.0" prefHeight="35.0" prefWidth="450.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <TextField fx:id="weightText" layoutX="16.0" layoutY="304.0" prefHeight="35.0" prefWidth="233.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="304.0" />
+      <TextField fx:id="heightText" layoutX="246.0" layoutY="304.0" prefHeight="35.0" prefWidth="222.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="304.0" />
+      <Label layoutX="17.0" layoutY="85.0" text="NAME" textFill="#000000a9">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="302.0" layoutY="85.0" text="AGE" textFill="#000000a8">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="152.0" text="GENDER" textFill="#000000a8">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="264.0" layoutY="152.0" text="SEX" textFill="#000000a8">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="223.0" text="GOAL" textFill="#000000a8">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="287.0" text="WEIGHT" textFill="#000000a8">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="263.0" layoutY="287.0" text="HEIGHT" textFill="#000000a8">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="24.0" prefHeight="28.0" prefWidth="233.0" text="Information Modification" textFill="#000000a8">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveButton" contentDisplay="CENTER" layoutX="157.0" layoutY="379.0" mnemonicParsing="false" onAction="#onClickBtn" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #fbde85;" text="SAVE YOUR CHANGES" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Separator layoutX="23.0" layoutY="58.0" prefHeight="3.0" prefWidth="432.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+   </children>
+</AnchorPane>

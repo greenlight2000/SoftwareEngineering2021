@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="view" prefHeight="600.0" prefWidth="220.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group56.view.user_info_module.AdsController">
+   <children>
+      <VBox alignment="CENTER" layoutY="-25.0" prefHeight="600.0" prefWidth="230.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefWidth="100.0">
+                     <children>
+                        <Label text="Change" textFill="#f8c303">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Information" textFill="#f8c303">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="65.0" fitWidth="74.0" onMouseClicked="#onClickModifyBtn" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/images/Snap/iShot2021-04-24%2010.09.48.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="-5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <ImageView fitHeight="239.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/images/Picture/AdsPic01.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fitHeight="269.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/images/Picture/AdsPic02.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
