@@ -7,7 +7,9 @@ public class daoTest {
     CustomerDAO dao = new CustomerDAOImpl();
     @Test
     public void insert(){
-        dao.insert(new Customer("1","wyk","gogogo","男酮","男","18","2021-1-1","180","63"));
+//        dao.insert(new Customer("1","wyk","gogogo","男酮","男","18","2021-1-1","180","63"));
+        Customer customer = dao.selectByID("1");
+        System.out.println(customer);
     }
 
 }

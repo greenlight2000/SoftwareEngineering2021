@@ -17,7 +17,7 @@ public class ScheduleDAOImpl implements ScheduleDAO {
     }
 
     public boolean insert(Schedule schedule){
-        jsonFileProcessor file = new jsonFileProcessor("records/Schedule.json");
+        jsonFileProcessor file = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Schedule.json");
         StringBuffer buffer = file.read();
         ArrayList<Schedule> records = new ArrayList<Schedule>();
         if (!buffer.toString().equals("")) {
@@ -32,7 +32,7 @@ public class ScheduleDAOImpl implements ScheduleDAO {
     }
 
     public Schedule selectByID(String scheduleID){
-        StringBuffer buffer = new jsonFileProcessor("records/Schedule.json").read();
+        StringBuffer buffer = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Schedule.json").read();
         if (!buffer.toString().equals("")) {
             ArrayList<Schedule> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Schedule>>(){}.getType());
             for (Schedule s : records)
@@ -43,7 +43,7 @@ public class ScheduleDAOImpl implements ScheduleDAO {
     }
 
     public boolean delete(String scheduleID){
-        jsonFileProcessor file = new jsonFileProcessor("records/Schedule.json");
+        jsonFileProcessor file = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Schedule.json");
         StringBuffer buffer = file.read();
         if (!buffer.toString().equals("")) {
             ArrayList<Schedule> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Schedule>>(){}.getType());

@@ -17,7 +17,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     public boolean insert(Customer customer) {
-        jsonFileProcessor file = new jsonFileProcessor("records/Customer.json");
+        jsonFileProcessor file = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Customer.json");
         StringBuffer buffer = file.read();
         ArrayList<Customer> records = new ArrayList<>();
         if (!buffer.toString().equals("")) {
@@ -32,7 +32,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     public boolean delete(String customerID) {
-        jsonFileProcessor file = new jsonFileProcessor("records/Customer.json");
+        jsonFileProcessor file = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Customer.json");
         StringBuffer buffer = file.read();
         if (!buffer.toString().equals("")) {
             ArrayList<Customer> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Customer>>(){}.getType());
@@ -52,7 +52,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     public Customer selectByID(String customerID) {
-        StringBuffer buffer = new jsonFileProcessor("records/Customer.json").read();
+        StringBuffer buffer = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Customer.json").read();
         if (!buffer.toString().equals("")) {
             ArrayList<Customer> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Customer>>(){}.getType());
             for (Customer c : records)

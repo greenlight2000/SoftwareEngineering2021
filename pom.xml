@@ -14,6 +14,17 @@
     </properties>
     <dependencies>
         <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>11</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.8.6</version>
@@ -32,6 +43,74 @@
             <version>1.18.12</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- maven 打包集成插件 -->
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <!-- 配置主程序 java -jar 默认Class -->
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <!--Main程序入口-->
+                            <mainClass>com.group56.MainApp</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-jar-plugin</artifactId>-->
+<!--                <version>3.1.2</version>-->
+<!--                <configuration>-->
+<!--                    <archive>-->
+<!--                        <manifest>-->
+<!--                            <mainClass>com.group56.MainApp</mainClass>-->
+<!--                        </manifest>-->
+<!--                    </archive>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.8.0</version>-->
+<!--                <configuration>-->
+<!--                    <release>11</release>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.openjfx</groupId>-->
+<!--                <artifactId>javafx-maven-plugin</artifactId>-->
+<!--                <version>0.0.4</version>-->
+<!--                <configuration>-->
+<!--                    <source>${maven.compiler.source}</source>-->
+<!--                    <target>${maven.compiler.target}</target>-->
+<!--&lt;!&ndash;                    <stripDebug>true</stripDebug>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <compress>2</compress>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <noHeaderFiles>true</noHeaderFiles>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <noManPages>true</noManPages>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <launcher>launcher</launcher>&lt;!&ndash;可执行文件名&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    <jlinkImageName>output</jlinkImageName>&lt;!&ndash;输出目录名&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    <jlinkZipName>outputzip</jlinkZipName>&lt;!&ndash;zip文件名&ndash;&gt;&ndash;&gt;-->
+<!--                    <mainClass>com.group56.MainApp</mainClass>&lt;!&ndash;主类路径&ndash;&gt;-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+        </plugins>
+    </build>
 
 
 </project>

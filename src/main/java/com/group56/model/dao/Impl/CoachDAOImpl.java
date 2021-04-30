@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CoachDAOImpl implements CoachDAO {
 
     public boolean insert(Coach coach) {
-        jsonFileProcessor file = new jsonFileProcessor("records/Coach.json");
+        jsonFileProcessor file = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Coach.json");
         StringBuffer buffer = file.read();
         ArrayList<Coach> records = new ArrayList<Coach>();
         if (!buffer.toString().equals("")) {
@@ -27,7 +27,7 @@ public class CoachDAOImpl implements CoachDAO {
     }
 
     public boolean delete(String coachID) {
-        jsonFileProcessor file = new jsonFileProcessor("records/Coach.json");
+        jsonFileProcessor file = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Coach.json");
         StringBuffer buffer = file.read();
         if (!buffer.toString().equals("")) {
             ArrayList<Coach> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Coach>>(){}.getType());
@@ -47,7 +47,7 @@ public class CoachDAOImpl implements CoachDAO {
     }
 
     public Coach selectByID(String coachID) {
-        StringBuffer buffer = new jsonFileProcessor("records/Coach.json").read();
+        StringBuffer buffer = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Coach.json").read();
         if (!buffer.toString().equals("")) {
             ArrayList<Coach> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Coach>>(){}.getType());
             for (Coach c : records)
