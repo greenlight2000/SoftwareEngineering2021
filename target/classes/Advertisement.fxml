@@ -31,7 +31,7 @@
                   </VBox>
                   <ImageView fitHeight="65.0" fitWidth="74.0" onMouseClicked="#onClickModifyBtn" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@assets/images/Snap/iShot2021-04-24%2010.09.48.png" />
+                        <Image url="@assets/images/Snap/iShot2021-04-24 10.09.48.png" />
                      </image>
                      <HBox.margin>
                         <Insets right="-5.0" />

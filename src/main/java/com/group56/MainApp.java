@@ -9,7 +9,6 @@ import javafx.stage.WindowEvent;
 
 public class MainApp extends Application {
     public static String customerId="1";
-
     public static Stage customerInfoStage;
     public static Stage videoStage;
     @Override

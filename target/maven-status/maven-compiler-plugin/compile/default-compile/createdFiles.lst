@@ -23,6 +23,7 @@ com/group56/model/dao/Impl/VideoDAOImpl$2.class
 com/group56/viewmodel/ViewModel.class
 com/group56/model/dao/ScheduleDAO.class
 com/group56/model/dao/Impl/CoachDAOImpl$2.class
+com/group56/utils/DBSrcMenu.class
 com/group56/model/dao/Impl/ScheduleDAOImpl.class
 com/group56/model/dao/Impl/VideoDAOImpl$3.class
 com/group56/model/entity/Schedule.class
@@ -32,7 +33,6 @@ com/group56/model/entity/Video.class
 com/group56/MoreModuleApp.class
 com/group56/model/entity/Coach.class
 com/group56/model/dao/CustomerDAO.class
-com/group56/model/entity/Person.class
 com/group56/mediator/ControllerMediator.class
 com/group56/view/ViewController.class
 com/group56/model/dao/Impl/VideoDAOImpl$4.class

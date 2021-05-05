@@ -6,8 +6,8 @@ public enum DBSrcMenu {
     SCHEDULE_JSON("Schedule.json"),
     VIDEO_JSON("Video.json");
 
-
-    public String basePath = "/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/";
+    //lib,jar包要放在同级目录, records文件与他们的父文件同级。
+    public String basePath = "../records/";///Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/
 
     private String src;
 

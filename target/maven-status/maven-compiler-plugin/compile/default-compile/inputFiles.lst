@@ -1,5 +1,4 @@
 /Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02/src/main/java/com/group56/viewmodel/dto/CustomerDTO.java
-/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02/src/main/java/com/group56/model/entity/Person.java
 /Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02/src/main/java/com/group56/utils/FXMLSrcMenu.java
 /Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02/src/main/java/com/group56/view/user_info_module/UserInfoModifyViewController.java
 /Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02/src/main/java/com/group56/view/user_info_module/AdsController.java
@@ -27,4 +26,5 @@
 /Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02/src/main/java/com/group56/utils/FXMLViewHandler.java
 /Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02/src/main/java/com/group56/model/dao/Impl/ScheduleDAOImpl.java
 /Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02/src/main/java/com/group56/view/user_info_module/UserModuleFrameWork.java
+/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02/src/main/java/com/group56/utils/DBSrcMenu.java
 /Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02/src/main/java/com/group56/model/dao/CoachDAO.java

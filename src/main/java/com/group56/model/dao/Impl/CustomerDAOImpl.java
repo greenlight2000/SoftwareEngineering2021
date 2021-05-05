@@ -18,7 +18,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     public boolean insert(Customer customer) {
-        jsonFileProcessor file = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Customer.json");
+        jsonFileProcessor file = new jsonFileProcessor(DBSrcMenu.CUSTOMER_JSON.getSrc());
         StringBuffer buffer = file.read();
         ArrayList<Customer> records = new ArrayList<>();
         if (!buffer.toString().equals("")) {

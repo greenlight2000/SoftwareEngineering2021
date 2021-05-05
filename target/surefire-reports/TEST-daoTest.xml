@@ -13,8 +13,8 @@
     <property name="path.separator" value=":"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="sun.os.patch.level" value="unknown"/>
-    <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/Iterations/Iteration02"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
@@ -24,11 +24,14 @@
     <property name="java.io.tmpdir" value="/var/folders/y1/v_6pmmgs2cs1kcb4sllrpcb00000gn/T/"/>
     <property name="line.separator" value="
 "/>
+    <property name="socksProxyPort" value="1086"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="https.proxyHost" value="127.0.0.1"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="maven.ext.class.path" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
     <property name="classworlds.conf" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="http.proxyPort" value="1087"/>
     <property name="java.library.path" value="/Users/wangyunkun/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="maven.conf" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/conf"/>
     <property name="jdk.debug" value="release"/>
@@ -36,6 +39,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.16"/>
+    <property name="http.nonProxyHosts" value="127.0.0.1|localhost|*.localhost"/>
     <property name="user.home" value="/Users/wangyunkun"/>
     <property name="user.timezone" value="Asia/Shanghai"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
@@ -43,15 +47,17 @@
     <property name="java.specification.version" value="11"/>
     <property name="user.name" value="wangyunkun"/>
     <property name="java.class.path" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="socksProxyHost" value="127.0.0.1"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1 package"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.1 -s /Users/wangyunkun/java/apache-maven-3.6.3/conf/settings.xml package"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="11.0.8"/>
+    <property name="http.proxyHost" value="127.0.0.1"/>
     <property name="java.vendor" value="AdoptOpenJDK"/>
     <property name="maven.home" value="/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3"/>
     <property name="file.separator" value="/"/>
@@ -60,6 +66,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="AdoptOpenJDK"/>
+    <property name="https.proxyPort" value="1087"/>
+    <property name="socksNonProxyHosts" value="127.0.0.1|localhost|*.localhost"/>
+    <property name="ftp.nonProxyHosts" value="127.0.0.1|localhost|*.localhost"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
 </testsuite>
