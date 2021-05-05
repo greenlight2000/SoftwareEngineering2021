@@ -5,13 +5,14 @@ import com.google.gson.reflect.TypeToken;
 import com.group56.model.dao.VideoDAO;
 import com.group56.model.entity.Video;
 import com.group56.model.tools.jsonFileProcessor;
+import com.group56.utils.DBSrcMenu;
 
 import java.util.ArrayList;
 
 public class VideoDAOImpl implements VideoDAO {
 
     public boolean insert(Video video) {
-        jsonFileProcessor file = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Video.json");
+        jsonFileProcessor file = new jsonFileProcessor(DBSrcMenu.VIDEO_JSON.getSrc());
         StringBuffer buffer = file.read();
         ArrayList<Video> records = new ArrayList<Video>();
         if (!buffer.toString().equals("")) {
@@ -22,7 +23,7 @@ public class VideoDAOImpl implements VideoDAO {
     }
 
     public boolean delete(String name) {
-        jsonFileProcessor file = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Video.json");
+        jsonFileProcessor file = new jsonFileProcessor(DBSrcMenu.VIDEO_JSON.getSrc());
         StringBuffer buffer = file.read();
         if (!buffer.toString().equals("")) {
             ArrayList<Video> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Video>>(){}.getType());
@@ -42,7 +43,7 @@ public class VideoDAOImpl implements VideoDAO {
     }
 
     public Video selectByName(String name) {
-        StringBuffer buffer = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Video.json").read();
+        StringBuffer buffer = new jsonFileProcessor(DBSrcMenu.VIDEO_JSON.getSrc()).read();
         if (!buffer.toString().equals("")) {
             ArrayList<Video> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Video>>(){}.getType());
             for (Video v : records)
@@ -52,7 +53,7 @@ public class VideoDAOImpl implements VideoDAO {
         return null;
     }
     public int length(){
-        StringBuffer buffer = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Video.json").read();
+        StringBuffer buffer = new jsonFileProcessor(DBSrcMenu.VIDEO_JSON.getSrc()).read();
         ArrayList<Video> records = null;
         if (!buffer.toString().equals("")) {
             records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Video>>() {
@@ -64,7 +65,7 @@ public class VideoDAOImpl implements VideoDAO {
             return 0;
     }
     public ArrayList<Video> Total(){
-        StringBuffer buffer = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Video.json").read();
+        StringBuffer buffer = new jsonFileProcessor(DBSrcMenu.VIDEO_JSON.getSrc()).read();
         ArrayList<Video> records = null;
         if (!buffer.toString().equals("")) {
             records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Video>>() {

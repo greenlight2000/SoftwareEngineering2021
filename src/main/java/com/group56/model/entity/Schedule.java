@@ -8,7 +8,6 @@ import lombok.*;
 @NoArgsConstructor
 @ToString
 public class Schedule {
-
     private String scheduleID;
     private String customerID;
     private String coachID;

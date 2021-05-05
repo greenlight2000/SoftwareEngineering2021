@@ -7,6 +7,7 @@ import com.group56.model.dao.CustomerDAO;
 import com.group56.model.entity.Coach;
 import com.group56.model.entity.Customer;
 import com.group56.model.tools.jsonFileProcessor;
+import com.group56.utils.DBSrcMenu;
 
 import java.util.ArrayList;
 
@@ -32,7 +33,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     public boolean delete(String customerID) {
-        jsonFileProcessor file = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Customer.json");
+        jsonFileProcessor file = new jsonFileProcessor(DBSrcMenu.CUSTOMER_JSON.getSrc());
         StringBuffer buffer = file.read();
         if (!buffer.toString().equals("")) {
             ArrayList<Customer> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Customer>>(){}.getType());
@@ -52,7 +53,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     public Customer selectByID(String customerID) {
-        StringBuffer buffer = new jsonFileProcessor("/Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/Customer.json").read();
+        StringBuffer buffer = new jsonFileProcessor(DBSrcMenu.CUSTOMER_JSON.getSrc()).read();
         if (!buffer.toString().equals("")) {
             ArrayList<Customer> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Customer>>(){}.getType());
             for (Customer c : records)
