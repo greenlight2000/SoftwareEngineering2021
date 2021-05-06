@@ -11,7 +11,10 @@ public enum FXMLSrcMenu {
     USER_INFO("/UserInfo.fxml"),
     USER_INFO_MODIFY("/UserInfoModify.fxml"),
     USER_ADS("/Advertisement.fxml"),
-    USER_FRAMEWORK("/UserModuleFrameWork.fxml");
+    USER_FRAMEWORK("/UserModuleFrameWork.fxml"),
+
+    //schedule模块
+    SCHEDULE_LIST("/ScheduleList.fxml");
 
     private String src;
 

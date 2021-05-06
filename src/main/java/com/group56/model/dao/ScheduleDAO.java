@@ -4,6 +4,7 @@ package com.group56.model.dao;
 import com.group56.model.entity.Schedule;
 
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 /**
  * @Description: The data access object layer interface of the file Schedule.json
@@ -47,5 +48,7 @@ public interface ScheduleDAO {
      * @return Schedule: Schedule selected by ID.
      */
     public Schedule selectByID(String scheduleID) throws FileNotFoundException;
+
+    public ArrayList<Schedule> query(String target, String column) throws FileNotFoundException;
 
 }

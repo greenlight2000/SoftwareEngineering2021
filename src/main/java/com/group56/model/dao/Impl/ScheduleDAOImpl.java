@@ -62,4 +62,27 @@ public class ScheduleDAOImpl implements ScheduleDAO {
             return insert(schedule);
         return false;
     }
+
+    public ArrayList<Schedule> query(String target, String column){
+        ArrayList<Schedule> res = new ArrayList<>();
+        StringBuffer buffer = new jsonFileProcessor(DBSrcMenu.SCHEDULE_JSON.getSrc()).read();
+        if (!buffer.toString().equals("")) {
+            ArrayList<Schedule> records = new Gson().fromJson(buffer.toString(), new TypeToken<ArrayList<Schedule>>(){}.getType());
+            for (Schedule s : records){
+                switch (column){
+                    case "Customer":{
+                        if (s.getCustomerID().equals(target))
+                            res.add(s);
+                        break;
+                    }
+                    case "Coach":{
+                        if (s.getCoachID().equals(target))
+                            res.add(s);
+                        break;
+                    }
+                }
+            }
+        }
+        return res;
+    }
 }

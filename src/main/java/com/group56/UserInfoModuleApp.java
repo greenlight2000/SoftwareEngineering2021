@@ -5,6 +5,7 @@ import com.group56.utils.FXMLViewHandler;
 import com.group56.mediator.ControllerMediator;
 import com.group56.mediator.UserModuleCtrlrMediator;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -17,6 +18,7 @@ public class UserInfoModuleApp extends Application {
     public static Stage primaryStage;
     @Override
     public void start(Stage stage) throws Exception {
+        Platform.setImplicitExit(false);
         UserInfoModuleApp.primaryStage = stage;
 //        primaryStage.setScene(new Scene(new Pane()));
         FXMLViewHandler.putViewInStage(primaryStage, FXMLSrcMenu.USER_FRAMEWORK.getSrc(), "User Module");
