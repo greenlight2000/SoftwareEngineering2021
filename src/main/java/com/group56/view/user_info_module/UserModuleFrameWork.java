@@ -25,6 +25,7 @@ public class UserModuleFrameWork implements FrameworkController {
     @FXML
     public void initialize() throws IOException {
         registerToMediator();
+        FXMLViewHandler.putViewInPane(navigationPane, FXMLSrcMenu.NAVIGATOR.getSrc());
         FXMLViewHandler.putViewInPane(footerPane, FXMLSrcMenu.FOOTER.getSrc());
         FXMLViewHandler.putViewInPane(contentPane, FXMLSrcMenu.USER_INFO.getSrc());
         FXMLViewHandler.putViewInPane(advertisementPane, FXMLSrcMenu.USER_ADS.getSrc());

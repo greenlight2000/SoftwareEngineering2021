@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="80.0" stylesheets="@assets/css/Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group56.view.NavigationController">
+    <children>
+        <VBox fx:id="view" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="80.0">
+            <children>
+                <ImageView fx:id="logo" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <image>
+                        <Image url="assets/images/Logo/Logo.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="video_button" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickVideoBtn" prefHeight="40.0" prefWidth="40.0" styleClass="navigator_button">
+                    <VBox.margin>
+                        <Insets top="40.0" />
+                    </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+                <Label fx:id="video_text" text="View">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Button fx:id="book_button" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickBookBtn" prefHeight="40.0" prefWidth="40.0" styleClass="navigator_button">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+                <Label fx:id="book_text" text="Book">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Button fx:id="schedule_button" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickScheduleBtn" prefHeight="40.0" prefWidth="40.0" styleClass="navigator_button">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+                <Label fx:id="schedule_text" text="Schedule">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Button fx:id="user_button" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clickUserBtn" prefHeight="40.0" prefWidth="40.0" styleClass="navigator_button">
+                    <VBox.margin>
+                        <Insets top="200.0" />
+                    </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Button>
+                <Label fx:id="user_text" text="User">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</FlowPane>

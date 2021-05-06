@@ -6,7 +6,7 @@ public enum DBSrcMenu {
     SCHEDULE_JSON("Schedule.json"),
     VIDEO_JSON("Video.json");
 
-    //lib,jar包要放在同级目录, records文件与他们的父文件同级。
+    //records文件与jar包的父文件要放在同级，另外推荐lib和records放在同级。
     public String basePath = "../records/";///Users/wangyunkun/学校/大三下/Software Engineering/Course Work/records/
 
     private String src;

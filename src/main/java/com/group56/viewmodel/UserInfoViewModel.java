@@ -1,5 +1,5 @@
 package com.group56.viewmodel;
-
+import javafx.scene.media.Media;
 import com.group56.MainApp;
 import com.group56.model.dao.Impl.CustomerDAOImpl;
 import com.group56.viewmodel.dto.CustomerDTO;
@@ -15,7 +15,6 @@ public class UserInfoViewModel implements ViewModel{
             userInfoViewModel = new UserInfoViewModel(customerId);
         return userInfoViewModel;
     }
-
     private CustomerDTO customerDTO;
     //TODO:最好再封一层service放这，目的是保护一些不可写的参数如membershipTime
     private final CustomerDAO dao = new CustomerDAOImpl();

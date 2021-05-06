@@ -1,0 +1,68 @@
+#leftbox{
+    -fx-background-color: linear-gradient(to bottom, #f6f6f6, #ededed);
+    /*-fx-background-color: linear-gradient(to bottom, #ebf0f3, #d9dee3);*/
+}
+#book_text,#schedule_text,#user_text,#video_text,.navigator_text{
+    -fx-font-size:14px;
+    -fx-text-fill: #474747;
+    -fx-font-family: "PingFang SC"
+}
+#book_button,#video_button,#schedule_button,#user_button,.navigator_button{
+    -fx-border-color: #e08a2c;
+    -fx-border-width: 1px;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-background-color: #e08a2c;
+    -fx-opacity: 0.7;
+}
+#rightbox{
+    -fx-background-color: white;
+}
+#picture{
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-opacity: 0.9;
+}
+#name,#gender,#tel,#infor{
+    -fx-font-size:16px;
+    -fx-text-fill: #474747;
+    -fx-font-family:"PingFang SC"
+}
+#notice{
+    -fx-font-size:18px;
+    -fx-text-fill: #cbcbcb;
+    -fx-font-family: "PingFang SC"
+}
+#line{
+    -fx-background-color: #a7a7a7;
+    -fx-opacity: 0.3;
+}
+#submit_button{
+    -fx-border-color: #ececec;
+    -fx-border-width: 1px;
+    -fx-border-radius: 18;
+    -fx-background-radius: 18;
+    -fx-background-color:#ececec;
+    -fx-font-weight: bolder;
+    -fx-font-size: 20px;
+    -fx-text-fill: #6b6b6b;
+}
+#advertisement{
+    -fx-opacity: 0.9;
+}
+.button{
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color:#ececec;
+}
+.button1{
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-color:#ececec;
+}
