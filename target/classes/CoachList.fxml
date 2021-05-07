@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          prefHeight="600.0" prefWidth="800.0" stylesheets="@assets/css/Style.css"
+          xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group56.view.book_module.CoachListController">
+    <children>
+        <VBox fx:id="leftbox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="80.0">
+            <children>
+                <ImageView fx:id="logo" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <image>
+                        <Image url="/assets/images/Logo/Logo.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="video_button" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" onAction="#video">
+                    <VBox.margin>
+                        <Insets top="40.0" />
+                    </VBox.margin>
+                </Button>
+                <Label fx:id="video_text" text="View">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Button fx:id="book_button" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" onAction="#book">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Label fx:id="book_text" text="Book">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Button fx:id="schedule_button" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" onAction="#schedule">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Label fx:id="schedule_text" text="Search">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <Button fx:id="user_button" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" onAction="#user">
+                    <VBox.margin>
+                        <Insets top="200.0" />
+                    </VBox.margin>
+                </Button>
+                <Label fx:id="user_text" text="User">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+        <VBox fx:id="rightbox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="720.0">
+         <children>
+               <AnchorPane maxHeight="61.0" prefHeight="50.0" prefWidth="800.0">
+                  <children>
+                      <Text layoutX="290.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coach List">
+                          <font>
+                              <Font size="45.0" />
+                          </font>
+                      </Text>
+                  </children>
+               </AnchorPane>
+            <ScrollPane layoutX="10.0" layoutY="10.0" prefHeight="453.0" prefViewportHeight="593.0" prefViewportWidth="611.0" prefWidth="778.0">
+               <content>
+                   <VBox fx:id="list" prefHeight="468.0" prefWidth="720.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+    </children>
+</FlowPane>

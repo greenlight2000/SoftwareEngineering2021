@@ -5,6 +5,7 @@ import com.group56.MainApp;
 import com.group56.ScheduleModuleApp;
 import com.group56.model.dao.Impl.ScheduleDAOImpl;
 import com.group56.model.entity.Schedule;
+import com.sun.tools.javac.Main;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -33,7 +34,7 @@ public class ScheduleListController implements Initializable {
         user();
         int index=0;
         Schedule schedule;
-        String customerID = "123";
+        String customerID = MainApp.customerId;
         ScheduleDAOImpl scheduleDAO= new ScheduleDAOImpl();
         ArrayList<Schedule> schedules= scheduleDAO.query(customerID,"Customer");
         while (index<schedules.size()){
@@ -105,23 +106,11 @@ public class ScheduleListController implements Initializable {
             }
         });
     }
-
+    public void schedule(){
+        MainApp.showPrimaryStage(MainApp.scheduleListStage);
+    }
     public void book(){
-        book_button.setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                Platform.runLater(()->{
-//                    Stage primaryStage=(Stage)book_button.getScene().getWindow();
-//                    primaryStage.hide();
-//                    try{
-//                        CoachList coachList=new CoachList();
-//                        coachList.start(primaryStage);
-//                    } catch (Exception e) {
-//                        e.printStackTrace();
-//                    }
-                });
-            }
-        });
+        MainApp.showPrimaryStage(MainApp.coachListStage);
     }
     public void user(){
         MainApp.showPrimaryStage(MainApp.customerInfoStage);

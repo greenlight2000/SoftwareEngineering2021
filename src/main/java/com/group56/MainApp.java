@@ -1,15 +1,9 @@
 package com.group56;
 
-import com.group56.utils.FXMLSrcMenu;
-import com.group56.utils.FXMLViewHandler;
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.event.EventHandler;
 
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
 
 
 public class MainApp extends Application {
@@ -19,9 +13,11 @@ public class MainApp extends Application {
     public static Stage customerInfoStage;
     public static Stage videoStage;
     public static Stage scheduleListStage;
+    public static Stage coachListStage;
 
     //存一个全局共享的customer id
     public static String customerId="1";
+
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -30,6 +26,8 @@ public class MainApp extends Application {
         new UserInfoModuleApp().start(customerInfoStage);
         scheduleListStage = new Stage();
         new ScheduleModuleApp().start(scheduleListStage);
+        coachListStage = new Stage();
+        new BookModuleApp().start(coachListStage);
 
         MainApp.showPrimaryStage(customerInfoStage);
     }

@@ -11,7 +11,7 @@ import lombok.*;
 @ToString
 public class Coach {
     private String coachID;
-    private String gender;
+    private String name;
     private String sex;
     private String picUrl;
     private String tele;

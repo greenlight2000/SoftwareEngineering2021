@@ -6,12 +6,18 @@ package com.group56.utils;
 public enum FXMLSrcMenu {
     NAVIGATOR("/Navigator.fxml"),
 
+    //video模块
+
     //user info模块
     FOOTER("/footer.fxml"),
     USER_INFO("/UserInfo.fxml"),
     USER_INFO_MODIFY("/UserInfoModify.fxml"),
     USER_ADS("/Advertisement.fxml"),
     USER_FRAMEWORK("/UserModuleFrameWork.fxml"),
+
+    //book模块（一对一直播）
+    COACH_LIST("/CoachList.fxml"),
+    COACH_DETAIL("/Coach.fxml"),
 
     //schedule模块
     SCHEDULE_LIST("/ScheduleList.fxml");

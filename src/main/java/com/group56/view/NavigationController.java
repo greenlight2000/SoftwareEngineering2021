@@ -31,11 +31,12 @@ public class NavigationController implements ViewController{
     }
 
     public void clickVideoBtn(ActionEvent actionEvent) {
+        Alert alert = new Alert(Alert.AlertType.WARNING,"this module is still under development");
+        alert.show();
     }
 
     public void clickBookBtn(ActionEvent actionEvent) {
-        Alert alert = new Alert(Alert.AlertType.WARNING);
-        alert.show();
+        MainApp.showPrimaryStage(MainApp.coachListStage);
     }
 
     public void clickUserBtn(ActionEvent actionEvent) {
